@@ -60,7 +60,21 @@ Additionally, the system integrates **Machine Learning (ML)** with **Large Langu
 
 ---
 
+## Note
+The **`data/`** folder (containing True and Fake datasets) and the **`model/`** folder (containing trained ML models) are **not uploaded** to this repository because the files are larger than **25 MB**.  
+
+To run this project, you need to:
+
+1. **Download or prepare your own dataset** in the same structure (`True.csv` and `Fake.csv`) under a local `data/` folder.
+2. **Train the ML model locally** using `train_model.py` to generate the `model/fake_news_model.pkl`.
+3. **Run the application** using `app.py` or other scripts provided.
+
+> All other project scripts (`train_model.py`, `predict_and_analyze.py`, `summarizer.py`, `app.py`) are included and ready to use.
+
+
+
 ## Deployment
 1. **Local Deployment (VS Code / Terminal)**  
    ```bash
    python -m streamlit run app.py
+
